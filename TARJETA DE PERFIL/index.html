@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjeta de Perfil</title>
+    
+    <style>
+        body {
+            font-family: Roboto;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .tarjeta {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .social a {
+            margin: 0 0.5em;
+            text-decoration: none;
+        }
+
+        .social a img {
+            width: 30px;
+            cursor: pointer;
+            padding: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .social a img:hover {
+            transform: scale(1.2);
+        }         
+
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0156ac
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <h1>Bienvenido a mi perfil</h1>
+        <marquee = "alternate">
+            <img src="stn.jpg" alt="Foto de perfil" class="avatar"> 
+        </marquee>
+        <h2>Jean Paul</h2>
+        <p>Hola, soy programador especializado en Backend</p>
+
+        <div class="social">
+            <a href="https://signal.org/es/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Signal-Logo-Ultramarine_%282024%29.svg" alt="Signal" style = "width: 30px;">
+            </a>
+            <a href="https://linkedin.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" style = "width: 30px;">
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/1690643591twitter-x-logo-png.webp" alt="X" style = "width: 30px;">
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" alt="Github" style = "width: 30px;">
+            </a>
+        </div>
+
+        <button>Contáctame</button>
+    </div>
+</body>
+</html>

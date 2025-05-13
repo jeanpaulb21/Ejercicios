@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <form action="/procesor.php" method="post">
+    <h1>Registro de Usuarios</h1>
+
+    <label for="nombre"><strong>Nombre Completo:</strong></label>
+    <input type="text" id="nombre" name="nombre" 
+        required placeholder="Ingresa tu nombre completo"
+        title="Introduce tu nombre completo"><br><br>
+
+    <label for="correo"><strong>Correo:</strong></label>
+    <input type="email" id="correo" name="correo"
+        required placeholder="ejemplo@correo.com"
+        title="Introduce un correo válido"><br><br>
+
+    <label for="contrasena"><strong>Contraseña:</strong></label>
+    <input type="password" id="contrasena" name="contrasena"
+        required placeholder="De 8-12 caracteres"
+        title="Debe tener entre 8 y 12 caracteres, una mayúscula, un número y un símbolo"
+        minlength="8" maxlength="12"
+        pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{8,12}$"><br><br>
+
+    <label><strong>Género</strong></label><br>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label><br>
+    <input type="radio" id="femenino" name="genero" value="femenino">
+    <label for="femenino">Femenino</label><br><br>
+
+    <label><strong>Intereses</strong></label><br>
+    <input type="checkbox" id="musica" name="intereses" value="musica">
+    <label for="musica">Música</label><br>
+    <input type="checkbox" id="deportes" name="intereses" value="deportes">
+    <label for="deportes">Deportes</label><br><br>
+
+    <label for="pais"><strong>País</strong></label>
+    <select id="pais" name="pais" required title="Selecciona tu país">
+      <option value="" disabled selected>Selecciona un país</option>
+      <option value="colombia">Colombia</option>
+      <option value="venezuela">Venezuela</option>
+    </select><br><br>
+
+    <label for="comentarios"><strong>Comentarios</strong></label><br>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50"
+              required placeholder="Escribe tus comentarios aquí"
+              title="Escribe tus comentarios aquí"></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

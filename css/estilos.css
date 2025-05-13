@@ -1,0 +1,150 @@
+/*CALCULADORA DE EDAD/estilos.css*/
+body {
+  background-color: #e0e0e0
+  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto;
+}
+
+.contenedor {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0156ac;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  word-wrap: break-word;
+}
+
+
+/*CONTADOR DE CLICKS/estilos.css*/
+body {
+  background-color: #e0e0e0
+  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto;
+}
+
+.contenedor {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0156ac;
+}
+
+#contador {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+
+/*MAYUSCULAS/estilos.css*/
+body {
+  background-color: #e0e0e0
+  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto;
+}
+
+.contenedor {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+textarea {
+  width: 100%;
+  max-width: 300px;
+  height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0156ac;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  word-wrap: break-word;
+}
+
+

@@ -1,0 +1,261 @@
+/* Base */
+:root {
+  --blue-devflix: #006eff;
+  --black-bg: #141414;
+  --white: #ffffff;
+  --gray-border: #666;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/ccc6f0ef-5274-4c3a-a60c-9646f1e657b7/e93e38c7-d5ee-430c-9b67-2c2db6c3ae03/CO-es-20240429-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  color: var(--white);
+}
+
+.top-bar {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  padding: 0 2rem;
+  z-index: 3;
+}
+
+.logo {
+  color: var(--blue-devflix);
+  font-weight: bold;
+  font-size: .2.5rem;
+  font-family: Verdana;
+}
+
+
+.btn-primary-devflix {
+  background-color: var(--blue-devflix);
+  color: var(--white);
+  border: none;
+  height: 45px;
+  padding: 0 20px;
+  font-weight: 500;
+}
+
+.btn-primary-devflix:hover {
+  background-color: #0059ce;
+}
+
+
+.language-selector {
+  background-color: #000;
+  border: 1px solid var(--gray-border);
+  color: var(--white);
+  height: 45px;
+  min-width: 120px;
+  padding: 0 12px;
+}
+
+
+.form-control.input-lg {
+  height: 45px;
+  padding: 0 16px;
+}
+
+
+.slider-wrapper {
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.trending-poster {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  height: 240px;
+  width: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.trending-poster:hover {
+  transform: scale(1.05);
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(20, 20, 20, 0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0 12px;
+  z-index: 2;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left-btn {
+  left: -10px;
+}
+
+.right-btn {
+  right: -10px;
+}
+
+.features {
+  background-color: var(--black-bg);
+}
+
+.features h3 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--blue-devflix);
+}
+
+.card-text {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .features h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+.faq-section {
+  background-color: var(--black-bg);
+  padding: 40px 0;
+  color: #fff;
+}
+
+
+.faq-section h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  background-color: #555;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #666;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background-color: #777;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.faq-item:hover {
+  background-color: #444;
+}
+
+.faq-item:hover .faq-header {
+  background-color: #777;
+}
+
+.faq-header:hover .toggle-icon {
+  transform: rotate(45deg);
+}
+
+.faq-item:hover .faq-answer {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .faq-section h3 {
+    font-size: 1.6rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+  }
+}
